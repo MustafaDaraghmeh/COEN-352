@@ -5,7 +5,6 @@
 package coen352.tut2;
 
 enum TimeType {
-
     nanoSeconds, milliSeconds, seconds
 }
 
