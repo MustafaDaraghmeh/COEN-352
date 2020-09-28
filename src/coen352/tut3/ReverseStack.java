@@ -5,6 +5,7 @@
 package coen352.tut3;
 // Java code to reverse a
 // stack using recursion
+
 import java.util.Stack;
 
 class ReverseStack {
@@ -18,7 +19,7 @@ class ReverseStack {
     // at the bottom of a stack.
     static void insert_at_bottom(char x) {
 
-        if(st.isEmpty())
+        if (st.isEmpty())
             st.push(x);
 
         else {
@@ -44,10 +45,8 @@ class ReverseStack {
     // Below is the function that
     // reverses the given stack using
     // insert_at_bottom()
-    static void reverse()
-    {
-        if(st.size() > 0)
-        {
+    static void reverse() {
+        if (st.size() > 0) {
 
             // Hold all items in Function
             // Call Stack until we

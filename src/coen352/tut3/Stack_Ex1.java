@@ -63,18 +63,18 @@ public class Stack_Ex1 {
     // driver code
     public static void main(String[] args) {
         Stack s = new Stack();
-        s.push(1);
-        s.push(2);
-        s.push(3);
+        Stack.push(1);
+        Stack.push(2);
+        Stack.push(3);
 
-        System.out.println("current size: " + s.size());
+        System.out.println("current size: " + Stack.size());
 
-        System.out.println(s.top());
-        s.pop();
-        System.out.println(s.top());
-        s.pop();
-        System.out.println(s.top());
+        System.out.println(Stack.top());
+        Stack.pop();
+        System.out.println(Stack.top());
+        Stack.pop();
+        System.out.println(Stack.top());
 
-        System.out.println("current size: " + s.size());
+        System.out.println("current size: " + Stack.size());
     }
 }

@@ -7,7 +7,7 @@ package coen352.tut3;
 import java.util.Stack;
 
 public class StackDemo3 {
-    public static void main(String args[]){
+    public static void main(String[] args){
         Stack<Integer> stack = new Stack<>();
         System.out.println("Empty stack : "  + stack);
         System.out.println("Empty stack : "  + stack.isEmpty());

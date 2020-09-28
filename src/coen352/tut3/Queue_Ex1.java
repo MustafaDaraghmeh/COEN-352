@@ -9,10 +9,9 @@ package coen352.tut3;
 import java.util.*;
 
 public class Queue_Ex1 {
-    static class Queue
-    {
-        static Stack<Integer> s1 = new Stack<Integer>();
-        static Stack<Integer> s2 = new Stack<Integer>();
+    public static class Queue {
+        static Stack<Integer> s1 = new Stack<>();
+        static Stack<Integer> s2 = new Stack<>();
 
         static void enQueue(int x) {
             // Move all elements from s1 to s2
@@ -44,17 +43,17 @@ public class Queue_Ex1 {
             s1.pop();
             return x;
         }
-    };
+    }
 
     // Driver code
     public static void main(String[] args) {
-        Queue q = new Queue();
-        q.enQueue(1);
-        q.enQueue(2);
-        q.enQueue(3);
+        Queue queue = new Queue();
+        queue.enQueue(1);
+        queue.enQueue(2);
+        queue.enQueue(3);
 
-        System.out.println(q.deQueue());
-        System.out.println(q.deQueue());
-        System.out.println(q.deQueue());
+        System.out.println(queue.deQueue());
+        System.out.println(queue.deQueue());
+        System.out.println(queue.deQueue());
     }
 }

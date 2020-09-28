@@ -9,10 +9,20 @@ package coen352.tut3;
 
 import java.util.Stack;
 
-class Queue_Ex2
-{
-    static class Queue
-    {
+class Queue_Ex2 {
+    // Driver code
+    public static void main(String[] args) {
+        Queue q = new Queue();
+        Queue.enQueue(1);
+        Queue.enQueue(2);
+        Queue.enQueue(3);
+
+        System.out.println(Queue.deQueue());
+        System.out.println(Queue.deQueue());
+        System.out.println(Queue.deQueue());
+    }
+
+    static class Queue {
         static Stack<Integer> s1 = new Stack<Integer>();
         static Stack<Integer> s2 = new Stack<Integer>();
 
@@ -28,29 +38,16 @@ class Queue_Ex2
                 System.out.println("Q is Empty");
                 System.exit(0);
             }
-            while(!s1.isEmpty()){
+            while (!s1.isEmpty()) {
                 s2.push(s1.pop());
             }
             // Return top of s2
             int x = s2.peek();
             s2.pop();
-            while(!s2.isEmpty()){
+            while (!s2.isEmpty()) {
                 s1.push(s2.pop());
             }
             return x;
         }
-    };
-
-    // Driver code
-    public static void main(String[] args)
-    {
-        Queue q = new Queue();
-        q.enQueue(1);
-        q.enQueue(2);
-        q.enQueue(3);
-
-        System.out.println(q.deQueue());
-        System.out.println(q.deQueue());
-        System.out.println(q.deQueue());
     }
 }

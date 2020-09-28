@@ -6,7 +6,7 @@ package coen352.tut3;
 import java.util.Stack;
 
 class StackDemo1 {
-    public static void main(String a[]){
+    public static void main(String[] a){
         Stack<Integer> stack = new Stack<Integer>();
         if(stack==null){
             //out of memory
