@@ -8,7 +8,7 @@ public class bigO_Functions {
 
     public static void main(String[] args){
         int n=15;
-        StopWatch watch = new StopWatch(TimeType.milliSeconds);
+        StopWatch watch = new StopWatch(TimeType.nanoSeconds);
 
         watch.start();
         ConstantTimeFunction(n);
