@@ -5,7 +5,7 @@
 package coen352.tut5;
 
 /* Java program for Merge Sort */
-class MergeSort {
+class MergeSort_EX1 {
     // Merges two subarrays of arr[].
     // First subarray is arr[l..m]
     // Second subarray is arr[m+1..r]
@@ -84,14 +84,12 @@ class MergeSort {
     // Driver method
     public static void main(String args[]) {
         int arr[] = {12, 11, 13, 5, 6, 7};
-        int arr1[] = {12, 13, 3, 4, 5, 6, 7, 8, 9, 10, 11};
-        int arr2[] = {12, 11, 1, 5, 6, 7};
+
         System.out.println("Given Array");
         printArray(arr);
 
-        MergeSort ob = new MergeSort();
-        ob.merge(arr2, 0, 0, 1);
-        printArray(arr2);
+        MergeSort_EX1 ob = new MergeSort_EX1();
+
         ob.sort(arr, 0, arr.length - 1);
 
         System.out.println("\nSorted array");
