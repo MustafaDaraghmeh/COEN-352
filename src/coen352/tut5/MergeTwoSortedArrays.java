@@ -15,7 +15,6 @@ public class MergeTwoSortedArrays {
         int i = 0;
         int j = 0;
         int k = 0;
-
         // Traverse both array
         while (i < leftArrayLength && j < rightArrayLength) {
             // Check if current element of left
