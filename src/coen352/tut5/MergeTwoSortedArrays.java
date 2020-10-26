@@ -53,6 +53,7 @@ public class MergeTwoSortedArrays {
         int[] outputArray = new int[leftArray.length + rightArray.length];
 
         mergeArrays(leftArray, rightArray, outputArray);
+
         System.out.println("\nSorted output array");
         printArray(outputArray);
     }
