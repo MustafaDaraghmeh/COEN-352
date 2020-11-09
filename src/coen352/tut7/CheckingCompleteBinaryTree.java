@@ -43,7 +43,6 @@ class Node {
 
 class BinaryTree {
     Node root;
-
     // Count the number of nodes
     int countNumNodes(Node root) {
         if (root == null)
